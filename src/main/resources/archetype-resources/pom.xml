@@ -13,7 +13,7 @@
   </prerequisites>
 
   <properties>
-    <asciidoctor.version>0.1.4</asciidoctor.version>
+    <asciidoctor.version>1.5.0-SNAPSHOT</asciidoctor.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -47,7 +47,25 @@
                 <imagesDir>./images</imagesDir>
               </attributes>
               <sourceDirectory>src/doc</sourceDirectory>
+              <sourceDocumentName>document.adoc</sourceDocumentName>
               <headerFooter>true</headerFooter>
+            </configuration>
+          </execution>
+          <execution>
+            <id>output-dzslides</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>process-asciidoc</goal>
+            </goals>
+            <configuration>
+              <backend>dzslides</backend>
+              <templateDir>./src/main/resources/asciidoctor/backends/slim/dzslides</templateDir>
+              <templateEngine>slim</templateEngine>
+              <sourceDirectory>src/doc</sourceDirectory>
+              <sourceDocumentName>slides.adoc</sourceDocumentName>
+              <sourceHighlighter>highlightjs</sourceHighlighter>
+              <attributes>
+              </attributes>
             </configuration>
           </execution>
         </executions>
@@ -102,6 +120,22 @@
               <resources>          
                 <resource>
                   <directory>src/doc/snippets</directory>
+                  <filtering>false</filtering>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+          <execution>
+            <id>copy-resources-dzslides-runtime</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/generated-docs/dzslides</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>src/main/resources/asciidoctor/dzslides</directory>
                   <filtering>false</filtering>
                 </resource>
               </resources>              
