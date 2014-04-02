@@ -1,0 +1,4 @@
+asciidoctor-archetype
+=====================
+
+A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other than Maven &amp; Java required.
