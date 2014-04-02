@@ -10,17 +10,6 @@
   <name>asciidoctor-archetype</name>
   <description>An archetype to get you started with writing in Asciidoc. No prerequisites other than Java and Maven required.</description>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>ww-snapshots</id>
-      <url></url>
-    </snapshotRepository>
-    <repository>
-      <id>ww-releases</id>
-      <url></url>
-    </repository>
-  </distributionManagement>
-
   <scm>
     <connection>scm:git:https://github.com/wwerner/asciidoctor-archetype.git</connection>
      <url>https://github.com/wwerner/asciidoctor-archetype</url>
