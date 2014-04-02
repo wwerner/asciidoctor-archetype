@@ -1,0 +1,6 @@
+[submodule "src/main/resources/archetype-resources/src/main/resources/asciidoctor/backends"]
+	path = src/main/resources/archetype-resources/src/main/resources/asciidoctor/backends
+	url = https://github.com/asciidoctor/asciidoctor-backends.git
+[submodule "src/main/resources/archetype-resources/src/main/resources/asciidoctor/dzslides"]
+	path = src/main/resources/archetype-resources/src/main/resources/asciidoctor/dzslides
+	url = https://github.com/mojavelinux/dzslides
