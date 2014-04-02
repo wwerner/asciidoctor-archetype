@@ -5,7 +5,6 @@ A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other 
 (Caveat: until the asciidoctor maven plugin 1.5 is released, you will need to build it yourself. Look there: https://github.com/asciidoctor/asciidoctor-maven-plugin/)
 It also features an assembly that includes all files to recreate the documentation artifacts from the distribution package.
 
-I'm still working on getting the dzslides backend working.
 The required backends and the working dzslides fork for that are linked as submodules for easy updating from 
 
 * https://github.com/asciidoctor/asciidoctor-backends and 
