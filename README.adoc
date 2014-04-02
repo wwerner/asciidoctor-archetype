@@ -2,5 +2,33 @@ asciidoctor-archetype
 =====================
 
 A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other than Maven &amp; Java required.
+It also features an assembly that includes all files to recreate the documentation artefacts from the distribution package.
 
-one two
+I'm still working on getting the dzslides backend working.
+The required backends and the working dzslides fork for that are linked as submodules for easy updating from 
+
+* https://github.com/asciidoctor/asciidoctor-backends and 
+* https://github.com/mojavelinux/dzslides
+
+
+Quick Start
+-----------
+. Clone this repository
+[source, sh]
+git clone https://github.com/wwerner/asciidoctor-archetype.git
+
+. Build and install the archetype
+[source, sh]
+mvn install
+
+. Go to the folder where you want to create your documentation project and say
+[source, sh]
+mvn archetype:generate -DarchetypeGroupId=net.wolfgangwerner.writing -DarchetypeArtifactId=asciidoctor-archetype
+
+. Edit the sample document in <your project>/src/doc 
+. Build the sample document
+[source, sh]
+mvn install
+
+. Pick up the results in <your project>/target/generated-docs
+. Also take a look into the zip file. You should be able to extract it anywhere and run the build there.
