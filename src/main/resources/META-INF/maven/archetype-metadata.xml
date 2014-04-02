@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="example"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.groovy</include>
+        <include>**/*.html</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.</include>
+        <include>**/*.slim</include>
+        <include>**/*.haml</include>
+        <include>**/*.md</include>
+        <include>**/*.png</include>
+        <include>**/*.js</include>
+        <include>**/*.bat</include>
+        <include>**/*.erb</include>
+        <include>**/*.gitignore</include>
+        <include>**/*.adoc</include>
+        <include>**/*.css</include>
+        <include>**/*.rb</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/doc</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/assembly</directory>
+      <includes>
+        <include>**/*.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>src/doc</directory>
+      <includes>
+        <include>**/*.jpg</include>
+        <include>**/*.adoc</include>
+        <include>**/*.rb</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>

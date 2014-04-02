@@ -1,0 +1,46 @@
+:toc2:
+:icons: font
+
+Asciidoctor Maven Bootstrap
+===========================
+
+Why? Because you totally don't want to author documents in Word. Especially if you collaborate.
+
+This project provides a simplistic Framework to write articles and documentation in Asciidoc.
+No setup is required, the only prerequisite is Maven. It allows for roundtripping, i.e., assemblies created 
+using this archetype are self contained and can recreate themselves. Useful if you lost the original sources ...
+
+
+Examples
+--------
+You do not need to be an Ascii Art fetishist: 
+
+image::tattoo.jpg[]
+
+But you can include code snippets which will be highlighted nicely:
+[source,ruby]
+include::snippets/extensions.rb[]
+
+[source,java]
+include::snippets/mvn-plugin-execute.java[]
+
+Of course you can also have the code inline (with beautiful callouts):
+[source,ruby]
+----
+require 'sinatra' <1>
+
+get '/hi' do      <2>
+  "Hello World!"  <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> Content for response
+
+
+How to use
+----------
+
+* generate project from archetype
+* mvn clean install
+* The rendered documents are found in target/generated-docs 
