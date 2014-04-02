@@ -2,7 +2,7 @@ asciidoctor-archetype
 =====================
 
 A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other than Maven &amp; Java required.
-It also features an assembly that includes all files to recreate the documentation artefacts from the distribution package.
+It also features an assembly that includes all files to recreate the documentation artifacts from the distribution package.
 
 I'm still working on getting the dzslides backend working.
 The required backends and the working dzslides fork for that are linked as submodules for easy updating from 
