@@ -1,7 +1,7 @@
 asciidoctor-archetype
 =====================
 
-A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other than Maven &amp; Java required. 
+A maven archetype to bootstrap an asciidoctor toolchain. No prerequisites other than Maven & Java required. 
 (Caveat: until the asciidoctor maven plugin 1.5 is released, you will need to build it yourself. Look there: https://github.com/asciidoctor/asciidoctor-maven-plugin/ )
 It also features an assembly that includes all files to recreate the documentation artifacts from the distribution package.
 
