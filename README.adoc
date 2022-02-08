@@ -1,3 +1,5 @@
+🔥 This is massively outdated and not maintained. Feel free to use it as inspirations, but _don't_ use it verbatim. 🔥
+
 asciidoctor-archetype
 =====================
 
